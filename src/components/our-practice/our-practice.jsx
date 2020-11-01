@@ -34,7 +34,7 @@ export const OurPractice = () => {
                 </div>
             </div>
             <div className="our-practice-image-wrapper">
-                <img className="our-practice-image" src="/img/our-practice.jpg" alt="our-practice"/>
+                <img className="our-practice-image" src="./img/our-practice.jpg" alt="our-practice"/>
             </div>
         </div>
     )

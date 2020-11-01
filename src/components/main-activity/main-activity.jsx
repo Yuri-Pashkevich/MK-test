@@ -5,15 +5,15 @@ import { Link } from 'react-router-dom'
 export const MainActivity = ({ toMainActivity }) => {
 
     const mainActivityItems = [
-        { src: '/svg/hand.svg', title: 'Взыскание долгов', id: 0 },
-        { src: '/svg/scheme.svg', title: 'Реорганизация бизнеса', id: 1 },
-        { src: '/svg/sails.svg', title: 'Продажа бизнеса', id: 2 },
-        { src: '/svg/headphones.svg', title: 'Юридические консультации', id: 3 },
-        { src: '/svg/box.svg', title: 'Ликвидация организаций', id: 4 },
-        { src: '/svg/folder.svg', title: 'Разработка договоров', id: 5 },
-        { src: '/svg/stamp.svg', title: 'Регистрация бизнеса', id: 6 },
-        { src: '/svg/cup.svg', title: 'Юридический аутсорсинг', id: 7 },
-        { src: '/svg/building.svg', title: 'Аттестация в строительстве', id: 8 },
+        { src: './svg/hand.svg', title: 'Взыскание долгов', id: 0 },
+        { src: './svg/scheme.svg', title: 'Реорганизация бизнеса', id: 1 },
+        { src: './svg/sails.svg', title: 'Продажа бизнеса', id: 2 },
+        { src: './svg/headphones.svg', title: 'Юридические консультации', id: 3 },
+        { src: './svg/box.svg', title: 'Ликвидация организаций', id: 4 },
+        { src: './svg/folder.svg', title: 'Разработка договоров', id: 5 },
+        { src: './svg/stamp.svg', title: 'Регистрация бизнеса', id: 6 },
+        { src: './svg/cup.svg', title: 'Юридический аутсорсинг', id: 7 },
+        { src: './svg/building.svg', title: 'Аттестация в строительстве', id: 8 },
     ]
     const mainActivityList = mainActivityItems.map(({ src, title, id }) => (
         <li className="main-activity-item" key={id}>

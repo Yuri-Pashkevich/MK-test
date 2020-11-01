@@ -24,7 +24,7 @@ export const HeaderMenu = ({ toHeaderMenu, toBusinessSupport, toMainActivity, to
             <div className="container" >
                 <div className="header-menu">
                     <Link to="/">
-                        <img className="logo" src="/img/logo.png" alt="logo"/>
+                        <img className="logo" src="./img/logo.png" alt="logo"/>
                     </Link>
                     <div className="nav-search">
                         <nav className="nav">

@@ -5,11 +5,11 @@ let index = 0
 
 export const StaffSlider = () => {
     const staffItems = [
-        { src: '/img/staff1.jpg' },
-        { src: '/img/staff2.jpg' },
-        { src: '/img/staff3.jpg' },
-        { src: '/img/staff4.jpg' },
-        { src: '/img/staff5.jpg' },
+        { src: './img/staff1.jpg' },
+        { src: './img/staff2.jpg' },
+        { src: './img/staff3.jpg' },
+        { src: './img/staff4.jpg' },
+        { src: './img/staff5.jpg' },
     ]
     
     const [ defaultSlide, setDefaultSlide ] = useState(staffItems[0])

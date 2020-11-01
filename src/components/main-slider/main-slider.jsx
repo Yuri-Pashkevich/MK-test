@@ -4,11 +4,11 @@ import { Link } from 'react-router-dom'
 
 export const MainSlider = ({ toMainActivity }) => {
     const sliderItems = [
-        { title: 'Взыскание дебиторской задолженности', text: 'Индивидуальный подход и нацеленность на достижение результата', url: '/img/collection.jpg' },
-        { title: 'Юридический аутсорсинг', text: 'Гарантия своевременности и качества услуг', url: '/img/outsorsing.jpg' },
-        { title: 'Юридическая консультация', text: 'Детальные разъяснения вопросов по ведению бизнеса от профессионалов', url: '/img/consultation.jpg' },
-        { title: 'Ликвидация предприятия', text: 'Эффективное решение сложных задач', url: '/img/liquidation.jpg' },
-        { title: 'Регистрация ООО', text: 'Гарантируем минимальные сроки регистрации под ключ ', url: '/img/registration.jpg' },
+        { title: 'Взыскание дебиторской задолженности', text: 'Индивидуальный подход и нацеленность на достижение результата', url: './img/collection.jpg' },
+        { title: 'Юридический аутсорсинг', text: 'Гарантия своевременности и качества услуг', url: './img/outsorsing.jpg' },
+        { title: 'Юридическая консультация', text: 'Детальные разъяснения вопросов по ведению бизнеса от профессионалов', url: './img/consultation.jpg' },
+        { title: 'Ликвидация предприятия', text: 'Эффективное решение сложных задач', url: './img/liquidation.jpg' },
+        { title: 'Регистрация ООО', text: 'Гарантируем минимальные сроки регистрации под ключ ', url: './img/registration.jpg' },
     ]
     const [ fade, setFade ] = useState(false)
     const [ defaultSlide, setDefaultSlide ] = useState({

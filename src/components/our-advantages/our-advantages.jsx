@@ -3,10 +3,10 @@ import './our-advantages.scss'
 
 export const OurAdvantages = ({ scrollToRef }) => {
     const advantagesItems = [
-        { src: '/svg/sertificate.svg', subtitle: 'Лицензия на оказание юридических услуг', id: 36},
-        { src: '/svg/people.svg', subtitle: 'Опытные сотрудники', id: 37 },
-        { src: '/svg/communication.svg', subtitle: 'Коммуникативные навыки – без труда открываем любые двери и быстро решаем нужные вопросы', id: 38 },
-        { src: '/svg/edit-writing.svg', subtitle: 'Скрупулезный поход к ведению документации', id: 39 },
+        { src: './svg/sertificate.svg', subtitle: 'Лицензия на оказание юридических услуг', id: 36},
+        { src: './svg/people.svg', subtitle: 'Опытные сотрудники', id: 37 },
+        { src: './svg/communication.svg', subtitle: 'Коммуникативные навыки – без труда открываем любые двери и быстро решаем нужные вопросы', id: 38 },
+        { src: './svg/edit-writing.svg', subtitle: 'Скрупулезный поход к ведению документации', id: 39 },
     ]
     const advantagesList = advantagesItems.map(({ src, subtitle, id }) => (
         <li className="advantages-list-item" key={id}>
