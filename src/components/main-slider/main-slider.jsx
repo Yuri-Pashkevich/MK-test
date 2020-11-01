@@ -15,7 +15,6 @@ export const MainSlider = ({ toMainActivity }) => {
         { title: 'Ликвидация предприятия', text: 'Эффективное решение сложных задач', url: liquidation },
         { title: 'Регистрация ООО', text: 'Гарантируем минимальные сроки регистрации под ключ ', url: registration },
     ]
-    const [ fade, setFade ] = useState(false)
     const [ defaultSlide, setDefaultSlide ] = useState({
         slide: sliderItems[0],
         index: 0,
@@ -23,7 +22,6 @@ export const MainSlider = ({ toMainActivity }) => {
     const { title, text, url } = defaultSlide.slide
  
     const showNextSlide = (index) => {
-        setFade(true)
         if(sliderItems.length - 1 > defaultSlide.index) {
             setDefaultSlide({
                 ...defaultSlide,
@@ -39,7 +37,6 @@ export const MainSlider = ({ toMainActivity }) => {
         }
     }
     const showPrevSlide = (index) => {
-        setFade(true)
         if(defaultSlide.index === 0) {
             setDefaultSlide({
                 ...defaultSlide,
@@ -56,7 +53,7 @@ export const MainSlider = ({ toMainActivity }) => {
     }
     return (
         <div className="main-slider">
-            <div className={`slider-content ${fade ? 'fade' : ''}`} onAnimationEnd={() => setFade(false)}>
+            <div className="slider-content">
                 <img className="slide-img" src={url} alt="slider-img"/>
                 <div className="container">
                     <div className="slide-wrapper">

@@ -63,7 +63,6 @@ export const PartnerReviews = () => {
         ],
     ]
    
-    const [ fade, setFade ] = useState(false)
     const [ defaultSlide, setDefaultSlide ] = useState(partnerItems[0])
     const slides = defaultSlide.map(({ src, position, name, text, id }) => (
         <div className="partner-slide-wrapper" key={id}>
@@ -79,7 +78,6 @@ export const PartnerReviews = () => {
         </div>
     ))
     const showNextSlide = () => {
-        setFade(true)
         if(partnerItems.length - 1 > index) {
             setDefaultSlide(partnerItems[++index])   
         } else {
@@ -88,7 +86,6 @@ export const PartnerReviews = () => {
         }
     }
     const showPrevSlide = () => {
-        setFade(true)
         if(index === 0) {
             setDefaultSlide(partnerItems[partnerItems.length - 1])
             index = partnerItems.length - 1
@@ -110,7 +107,7 @@ export const PartnerReviews = () => {
                     <h2 className="partner-reviews-title">
                         Отзывы наших партнеров
                     </h2>
-                    <div className={`partner-slider ${fade ? 'fade' : ''}`} onAnimationEnd={() => setFade(false)}>
+                    <div className="partner-slider">
                         { slides }
                     </div>
                     <div className="partner-slider-nav">
