@@ -1,0 +1,179 @@
+@import '../../globals.scss';
+
+.cooperation-start {
+    padding: 100px 0;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.cooperation-start-organization {
+    width: 500px;
+}
+
+.cooperation-start-list {
+    margin: 35px 0;
+    li:first-child {
+        margin-bottom: 30px;
+    }
+}
+
+.cooperation-start-item {
+    display: flex;
+    align-items: center;
+}
+
+.cooperation-start-circle {
+    width: 70px;
+    height: 70px;
+    border: 1.5px solid rgba(222, 195, 119, 0.75);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cooperation-start-number {
+    font-family: 'Commissioner';
+    font-weight: 800;
+    font-size: 22px;
+    line-height: 67px;
+    color: $bgc-button-color;
+}
+
+.cooperation-start-subtext {
+    margin-left: 30px;
+    font-weight: 400;
+    width: 400px;
+}
+
+.cooperation-start-text {
+    font-size: 14px;
+}
+
+.cooperation-start-form {
+    background-color: $elements-bgc-color;
+    box-shadow: $box-shadow2;
+    border-radius: 3px;
+    padding: 40px 50px 50px;
+    width: 570px;
+    display: flex;
+    flex-direction: column;
+
+    input {
+        outline: none;
+        border: none;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        padding: 5px 8px;
+        display: block;
+        margin: 10px 0 20px;
+        width: 100%;
+        font-family: 'Lato';
+        font-weight: 400;
+        font-size: 15px;
+        color: $bgc-button-color;
+    }
+
+    input::placeholder {
+        font-family: 'Lato';
+        font-weight: 300;
+        font-size: 15px;
+        line-height: 25px;
+        color: $secondary-text;
+        opacity: 0.6;
+    }
+}
+
+.cooperation-start-name {
+    font-family: 'Commissioner';
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 20px;
+    color: $secondary-text;
+}
+
+.cooperation-start-tel {
+    font-family: 'Commissioner';
+    font-size: 13px;
+    line-height: 20px;
+    letter-spacing: 0.01em;
+    color: $secondary-text;
+}
+
+.cooperation-form-text {
+    font-family: 'Lato';
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 20px;
+    color: $secondary-text;
+}
+
+.cooperation-form-link {
+    display: block;
+    color: $secondary-text;
+    font-weight: 700;
+    margin-top: 5px;
+    line-height: 15px;
+    border-bottom: 1px solid $secondary-text;
+    width: 198px;
+}
+
+.cooperation-form-submit {
+    margin-top: auto;
+    @extend %button-rules;
+    width: auto;
+    height: 45px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.modal {
+    position: absolute;
+    border-radius: 10px;
+    padding: 50px 100px;
+    height: 365px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    background-color: $elements-bgc-color;
+    box-shadow: $box-shadow2;
+    z-index: 99;
+    text-align: center;
+    width: 100%;
+    h2 {
+        color: $bgc-button-color;
+    }
+    p {
+        width: 700px;
+        font-size: 16px;
+        line-height: 25px;
+        color: $subtitle-text;
+        font-weight: 400;
+        font-family: 'Lato';
+        letter-spacing: 0.02em;
+    }
+
+    button {
+        @extend .cooperation-form-submit;
+        width: 300px;
+        margin-top: 0;
+    }
+    
+    .modal-triangle {
+        position: absolute;
+        &:first-child {
+            border-left: 70px solid transparent;
+            border-bottom: 70px solid $bgc-button-color;
+            right: 0;
+            bottom: 0;
+        }
+        &:nth-child(2) {
+            border-left: 70px solid $bgc-button-color;
+            border-bottom: 70px solid transparent;
+            left: 0;
+            top: 0;
+        }
+    }
+}

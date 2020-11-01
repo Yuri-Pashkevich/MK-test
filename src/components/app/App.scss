@@ -1,0 +1,20 @@
+@import '../../globals.scss';
+
+.app {
+    position: relative;
+}
+
+.header {
+    padding: 15px 0 24px;
+    background-color: $elements-bgc-color;
+}
+
+.scrolled {
+    position: fixed;
+    z-index: 100;
+    background-color: $elements-bgc-color;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 15px 0 24px;
+}

@@ -1,0 +1,52 @@
+@import '../../globals.scss';
+
+.main-slider {
+    overflow: hidden;
+}
+
+.slider-content {
+    position: relative;
+    height: 650px;
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+  
+}
+.fade {
+    animation: animate-opacity .5s ease;
+}
+
+
+.slide-wrapper {
+    position: absolute;
+    top: -490px;
+}
+
+.slide-title {
+    width: 500px;
+}
+
+.slide-text {
+    margin: 20px 0 50px;
+}
+
+.slide-button {
+    @extend %button-rules;
+}
+
+.buttons-block {
+    position: absolute;
+    bottom: 120px;
+}
+
+.prev-slide, .next-slide {
+    outline: none;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin: 0 25px; 
+}
+

@@ -1,0 +1,65 @@
+@import '../../globals.scss';
+
+.our-advantages {
+    padding-top: 80px;
+}
+
+.our-advantages-title {
+    margin-bottom: 35px;
+}
+
+.our-advantages-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 30px;
+}
+
+.advantages-list-item {
+    width: 270px;
+    height: 335px;
+    padding: 25px 20px;
+    text-align: center;
+    box-shadow: $box-shadow1;
+    background-color: $elements-bgc-color;
+    border-radius: 5px;
+}
+
+.advantages-list-circle {
+    width: 120px;
+    height: 120px;
+    border: 3px solid rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 25px auto;
+    border-radius: 50%;
+}
+
+.advantages-list-subtitle {
+    font-size: 16px;
+    line-height: 25px;
+    color: $subtitle-text;
+    font-weight: 400;
+    font-family: 'Lato';
+    letter-spacing: 0.02em;
+}
+
+.our-advantages-jurist {
+    position: relative;
+    padding: 40px 50px 45px;
+    background-color: $elements-bgc-color;
+    margin-top: 40px;
+    box-shadow: $box-shadow1;
+}
+
+.our-advantages-triangle {
+    border-bottom: 70px solid transparent;
+    border-right: 70px solid $bgc-button-color;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.our-advantages-text {
+    width: 750px;
+}

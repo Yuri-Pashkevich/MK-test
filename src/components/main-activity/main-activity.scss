@@ -1,0 +1,63 @@
+@import '../../globals.scss';
+
+.main-activity {
+    margin-top: 100px;
+}
+
+.main-activity-title {
+    
+}
+
+.main-activity-list {
+    margin-top: 35px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+}
+
+.main-activity-item {
+    display: flex;
+    padding: 15px 15px 25px 40px;
+    box-shadow: $box-shadow2;
+    background-color: $elements-bgc-color;
+}
+
+.main-activity-wrapper {
+    margin-top: 10px;
+    width: 180px;
+    height: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.main-activity-subwrapper {
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 15px;
+}
+
+.main-activity-text {
+    margin-bottom: 30px;
+}
+
+.main-activity-sublink {
+    @extend %sublink-rules;
+}
+
+.main-activity-circle {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+}
+
+.main-activity-link {
+    @extend %button-rules;
+    margin-top: 40px;
+}

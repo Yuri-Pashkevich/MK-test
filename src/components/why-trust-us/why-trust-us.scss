@@ -1,0 +1,50 @@
+@import '../../globals.scss';
+
+.why-trust-us {
+    padding: 80px 0 100px;
+    background-color: $elements-bgc-color;
+    ul {
+        margin-left: 30px;
+    }
+    h2 {
+        margin-bottom: 30px;
+    }
+    h6 {
+        margin-left: 30px;
+    }
+}
+
+.why-trust-block {
+    margin-bottom: 60px;
+}   
+.block-separator {
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.1);
+    border: none;
+    margin: 0;
+}
+.what-receive-block {
+    margin-top: 60px;
+}
+
+.why-trust-list, .what-receive-list {
+    height: 255px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.why-trust-block, .what-receive-block {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+}
+
+.why-trust-info, .what-receive-info {
+    width: 470px;
+}
+
+.why-trust-item, .what-receive-item {
+    display: flex;
+    align-items: center;
+    align-content: space-between;
+}

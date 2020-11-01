@@ -1,0 +1,68 @@
+@import '../../globals.scss';
+
+.header-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 24px;
+}
+
+.nav-search {
+    display: flex;
+}
+
+.logo {
+    width: 230px;
+    height: 60px;
+}
+
+.nav-list {
+    display: flex;
+    font-family: 'Commissioner';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    a {
+        color: $subtitle-text;
+        margin-right: 50px;
+        transition: .2s ease;
+    }
+    a:hover {
+        color: $bgc-button-color;
+    }
+    
+}
+
+.search {
+    outline: none;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    svg {
+        color: $subtitle-text;
+        transition: .2s ease;
+    }
+    &:hover svg {
+        color: $bgc-button-color;
+    }
+}
+
+.search-form {
+    position: absolute;
+    right: 15px;
+    top: 75px;
+    input {
+        height: 25px;
+        width: 300px;
+        outline: none;
+        border: 1px solid $bgc-button-color;
+        border-radius: 2px;
+        font-family: 'Lato';
+        font-weight: 400;
+        font-size: 14px;
+        color: $bgc-button-color;
+        padding: 5px 8px;
+    }
+}

@@ -1,0 +1,64 @@
+@import '../../globals.scss';
+
+.customize-contacts {
+    display: flex;
+    justify-content: space-between;
+    & :nth-child(2) {
+        margin-left: 295px;
+    }
+}
+
+.language {
+    font-family: 'SourceSansPro';
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+    color: $main-text;
+    & :nth-child(2) {
+        font-weight: 400;
+        margin: 0 8px 0 13px;
+        cursor: pointer;
+    }
+}
+
+.language-select {
+    border: none;
+    outline: none;
+    font-family: 'SourceSansPro';
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+    opacity: 0.8;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    background-image: url('./arrow.svg');
+    background-repeat: no-repeat;
+    background-position: 100% 60%;
+    color: $main-text;
+    width: 74px;
+}
+
+.contacts {
+    font-family: 'Commissioner';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: $secondary-text;
+    display: flex;
+    align-items: center;
+    & :nth-child(2) {
+        margin: 0 15px;
+    }
+    & :nth-child(4) {
+        margin: 0 15px;
+    }
+    & :last-child {
+        margin-left: 15px;
+    }
+}
+
+.tender-eyed {
+    cursor: pointer;
+}

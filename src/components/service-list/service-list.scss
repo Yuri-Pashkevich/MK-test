@@ -1,0 +1,107 @@
+@import '../../globals.scss';
+
+.service-list {
+    padding: 80px 0 100px;
+}
+
+.service-list-title {
+    margin-bottom: 35px;
+}
+
+.service-list-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    :first-child span, :nth-child(2) span {
+        background-color: rgba(222, 195, 119, 0.4);
+    }
+    :nth-child(3) span, :nth-child(4) span {
+        background-color: rgba(222, 195, 119, 0.75);
+    }
+    :nth-child(5) span, :nth-child(6) span {
+        background-color: #DEC377;;
+    }
+    :nth-child(7) span, :nth-child(8) span {
+        background-color: rgba(222, 195, 119, 0.75);
+    }
+    :nth-child(9) span, :nth-child(10) span {
+        background-color: rgba(222, 195, 119, 0.4);
+    }
+    li:nth-child(odd) {
+        margin-right: 30px;
+    }
+    li:nth-child(2n) {
+        margin-bottom: 30px;
+    }
+    :nth-child(1) div {
+        width: 400px;
+    }
+    :nth-child(2) div {
+        width: 600px;
+    }
+    :nth-child(3) div {
+        width: 500px;
+    }
+    :nth-child(4) div {
+        width: 500px;
+    }
+    :nth-child(5) div {
+        width: 600px;
+    }
+    :nth-child(6) div {
+        width: 400px;
+    }
+    :nth-child(7) div {
+        width: 500px;
+    }
+    :nth-child(8) div {
+        width: 500px;
+    }
+    :nth-child(9) div {
+        width: 400px;
+    }
+    :nth-child(10) div {
+        width: 600px;
+    }
+    :nth-child(5) h5 {
+        width: 520px;
+    }
+}
+
+.service-list-item {
+    display: flex;
+    background-color: $elements-bgc-color;
+    box-shadow: $box-shadow2;
+    height: 140px;
+}
+
+.service-list-block {
+    width: 70px;
+    display: block;
+}
+
+.service-list-subwrapper {
+    padding: 25px 30px 20px;
+    position: relative;
+}
+
+.service-list-sublink {
+    position: absolute;
+    right: 25px;
+    bottom: 20px;
+    @extend %sublink-rules;
+}
+
+.service-text-wrapper {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin-top: 20px;
+}
+
+.service-list-text {
+    width: 770px;
+}
+
+.service-list-link {
+    @extend %button-rules;
+    justify-self: end;
+}

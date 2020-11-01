@@ -1,0 +1,191 @@
+@import '../../globals.scss';
+
+.footer-сontacts-wrapper {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 270px 670px 170px;
+    gap: 30px
+}
+
+// .footer-company {
+    
+// }
+
+.footer-company-title {
+    margin-bottom: 70px;
+}
+
+.footer-company-subinfo {
+    margin-bottom: 61.5px;
+}
+
+.footer-company-subinfo-item {
+    font-size: 13px;
+    line-height: 20px;
+    color: $secondary-text;
+
+    span:first-child {
+        font-family: 'Commissioner';
+        margin-right: 15px;
+        font-weight: 500;
+        letter-spacing: 0.01em;
+    }
+
+    span:last-child {
+        font-family: 'Lato';
+        margin-right: 15px;
+        font-weight: 300;
+    }
+}
+
+.footer-company-socials {
+    display: flex;
+
+    li {
+        margin: 0 18.5px 51.5px 0;
+    }
+}
+
+.footer-company-socials-link {
+    color: $secondary-text;
+    transition: .2s ease;
+
+    &:hover {
+        color: $bgc-button-color;
+    }   
+}
+
+.footer-company-info :last-child a {
+    width: 162px;
+}
+
+.footer-company-info-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.footer-company-info-link {
+    font-family: 'Lato';
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: $subtitle-text;
+    margin-right: 15px;
+    transition: .2s ease;
+
+    &:hover {
+        color: $bgc-button-color;
+    }
+}
+
+.footer-offices {
+    margin-top: 34px;
+}
+
+.footer-title {
+    font-family: 'Lato';
+    font-size: 15px;
+    line-height: 25px;
+    text-transform: uppercase;
+    color: $secondary-text;
+}
+
+.footer-separator {
+    margin: 0;
+    background: rgba(0, 0, 0, 0.1);
+    opacity: 0.7;
+    margin-bottom: 29px;
+}
+
+.footer-offices-list {
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    gap: 35px;
+    span {
+        display: block;
+    }
+}
+
+.footer-subtitle {
+    font-family: 'Commissioner';
+    font-size: 14px;
+    line-height: 25px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.footer-phones {
+    font-family: 'Lato';
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 20px;
+    color: $main-text;
+    margin: 20px 0 20px;
+}
+
+.footer-adress {
+    font-family: 'Lato';
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 20px;
+    color: $main-text;
+    margin-bottom: 3px;
+    span {
+        font-family: 'Commissioner';
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 20px;
+        letter-spacing: 0.01em;
+        color: $subtitle-text;
+        margin-bottom: 5px;
+    }
+}
+
+.footer-phones-russia {
+    @extend .footer-adress;
+    margin-bottom: 20px;
+    span {
+        margin: 20px 0 0;
+    }
+}
+
+.footer-email {
+    font-family: 'Commissioner';
+    font-size: 13px;
+    line-height: 20px;
+    color: $main-text;
+    margin-bottom: 35px;
+}
+
+.footer-working-hours {
+    margin-top: 34px;
+}
+
+.footer-working-list {
+    span {
+        display: block;
+    }
+}
+
+.footer-working-time {
+    @extend .footer-adress;
+    margin-bottom: 27px;    
+}
+
+.development-and-promotion {
+    font-family: 'Lato';
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+    color: $main-text;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 55px;
+    background-color: rgba(0, 0, 0, 0.1);
+}   
