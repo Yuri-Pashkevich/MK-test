@@ -1,5 +1,6 @@
 import React from 'react'
 import './business-support.scss'
+import stairs from './stairs.jpg'
 
 export const BusinessSupport = ({ scrollToRef }) => {
     return (
@@ -22,7 +23,7 @@ export const BusinessSupport = ({ scrollToRef }) => {
                         Все наши рекомендации основаны на глубоких академических знаниях и опыте практического применения в хозяйственном праве.
                     </p>
                 </div>
-                <img className="business-support-image" src="./img/stairs.jpg" alt="stairs"/>
+                <img className="business-support-image" src={stairs} alt="stairs"/>
             </div>
         </div>
     )

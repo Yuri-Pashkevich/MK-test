@@ -1,12 +1,16 @@
 import React from 'react'
 import './our-advantages.scss'
+import sertificate from '../../svg/sertificate.svg'
+import people from '../../svg/people.svg'
+import communication from '../../svg/communication.svg'
+import editwriting from '../../svg/edit-writing.svg'
 
 export const OurAdvantages = ({ scrollToRef }) => {
     const advantagesItems = [
-        { src: './svg/sertificate.svg', subtitle: 'Лицензия на оказание юридических услуг', id: 36},
-        { src: './svg/people.svg', subtitle: 'Опытные сотрудники', id: 37 },
-        { src: './svg/communication.svg', subtitle: 'Коммуникативные навыки – без труда открываем любые двери и быстро решаем нужные вопросы', id: 38 },
-        { src: './svg/edit-writing.svg', subtitle: 'Скрупулезный поход к ведению документации', id: 39 },
+        { src: sertificate, subtitle: 'Лицензия на оказание юридических услуг', id: 36},
+        { src: people, subtitle: 'Опытные сотрудники', id: 37 },
+        { src: communication, subtitle: 'Коммуникативные навыки – без труда открываем любые двери и быстро решаем нужные вопросы', id: 38 },
+        { src: editwriting, subtitle: 'Скрупулезный поход к ведению документации', id: 39 },
     ]
     const advantagesList = advantagesItems.map(({ src, subtitle, id }) => (
         <li className="advantages-list-item" key={id}>

@@ -1,6 +1,13 @@
 import React, { useState } from 'react'
 import './partner-reviews.scss'
 import { Link } from 'react-router-dom'
+import partnerreviews from '../../img/partner-reviews.jpg'
+import bauarenda from '../../img/bau-arenda.jpg'
+import titan from '../../img/titan.jpg'
+import favorit from '../../img/favorit.jpg'
+import alphabank from '../../img/alpha-bank.jpg'
+import IBA from '../../img/IBA.jpg'
+
 
 let index = 0
 
@@ -8,14 +15,14 @@ export const PartnerReviews = () => {
     const partnerItems = [
         [
             {   
-                src: './img/partner-reviews.jpg',
+                src: partnerreviews,
                 position: 'директор', 
                 name: 'С.В. Косачев', 
                 text: 'Уважаемая Светлана Александровна! Наша компания выражает благодарность и признательность обществу с ограниченной ответственностью «МК-Правовые технологии». Благодаря слаженной работе и высокой квалификации Ваших сотрудников и специалистов компания «ВиваСтрой» получила качественные юридические услуги по взысканию денежных средств с должника. Профессионализм работников ООО «МК-Правовые технологии», а также желание работать со сложными и нестандартными задачами является залогом высокоэффективного и успешного взаимодействия наших компаний. Рекомендуем...',
                 id: 12
             },
             { 
-                src: './img/partner-reviews.jpg',
+                src: partnerreviews,
                 position: 'глава представительства', 
                 name: 'Валерий Мяснянкин', 
                 text: 'Представительство корпорации «VMSN GROUP, INC.» (США) в Республике Беларусь на протяжении нескольких лет сотрудничает с ООО «МК-Правовые технологии» в рамках сопровождения деятельности по юридическим вопросам, в том числе по вопросам ведения кадрового делопроизводства – абонентское обслуживание. Хотелось бы отметить работу специалистов ООО «МК-Правовые технологии» хорошими теплыми словами: надёжные, обязательные, пунктуальные. Вопросы любой сложности им по плечу. Работая с профессионалами МК-Правовые технологии, всегда можно рассчитывать...',
@@ -24,14 +31,14 @@ export const PartnerReviews = () => {
         ],
         [
             {   
-                src: './img/partner-reviews.jpg',
+                src: partnerreviews,
                 position: 'дизайнер', 
                 name: 'Ирина Рыбкина', 
                 text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum vitae animi in at ab qui aut explicabo possimus, voluptatum veniam amet reiciendis, porro quae similique? Commodi doloremque autem maxime dolorum. Sit dignissimos repellat unde tempore dolorum harum assumenda aspernatur ullam deleniti, reiciendis impedit optio. Maiores aliquid delectus eveniet porro tenetur, voluptatum cupiditate voluptate doloribus magni cum assumenda quisquam quia amet!',
                 id: 14
             },
             { 
-                src: './img/partner-reviews.jpg',
+                src: partnerreviews,
                 position: 'маркетолог', 
                 name: 'Андрей Петров', 
                 text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum vitae animi in at ab qui aut explicabo possimus, voluptatum veniam amet reiciendis, porro quae similique? Commodi doloremque autem maxime dolorum. Sit dignissimos repellat unde tempore dolorum harum assumenda aspernatur ullam deleniti, reiciendis impedit optio. Maiores aliquid delectus eveniet porro tenetur, voluptatum cupiditate voluptate doloribus magni cum assumenda quisquam quia amet!',
@@ -40,14 +47,14 @@ export const PartnerReviews = () => {
         ],
         [
             {   
-                src: './img/partner-reviews.jpg',
+                src: partnerreviews,
                 position: 'бухгалтер', 
                 name: 'Светлана Игоревна', 
                 text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit natus culpa tempore! Rem aliquid, amet reiciendis vel suscipit modi sed in tempore neque? Eum perferendis iusto sed deserunt rerum numquam? Quia nobis quidem perspiciatis sint, cum est inventore, unde ad vel aliquam dolore voluptate amet doloremque, id rem odit at minus magnam ipsam sequi excepturi? Consequuntur temporibus quaerat repellat earum. Iure sed nihil, magni, ab odio veritatis, natus id minima cupiditate velit repudiandae esse ut incidunt? Neque, vel. Animi, ex sunt distinctio iure magni reprehenderit accusamus odio? Illo, quaerat possimus.',
                 id: 16
             },
             { 
-                src: './img/partner-reviews.jpg',
+                src: partnerreviews,
                 position: 'web-developer', 
                 name: 'Сергей Витальевич', 
                 text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit natus culpa tempore! Rem aliquid, amet reiciendis vel suscipit modi sed in tempore neque? Eum perferendis iusto sed deserunt rerum numquam? Quia nobis quidem perspiciatis sint, cum est inventore, unde ad vel aliquam dolore voluptate amet doloremque, id rem odit at minus magnam ipsam sequi excepturi? Consequuntur temporibus quaerat repellat earum. Iure sed nihil, magni, ab odio veritatis, natus id minima cupiditate velit repudiandae esse ut incidunt? Neque, vel. Animi, ex sunt distinctio iure magni reprehenderit accusamus odio? Illo, quaerat possimus.',
@@ -128,11 +135,11 @@ export const PartnerReviews = () => {
                             <Link to="/" className="our-partners-link">Наши партнеры</Link>  
                         </div>
                         <div className="our-partners-logos">
-                            <img className="logo-bau-arenda" src='./img/bau-arenda.jpg' alt="logo"/>
-                            <img className="logo-titan" src='./img/titan.jpg' alt="logo"/>
-                            <img className="logo-favorit" src='./img/favorit.jpg' alt="logo"/>
-                            <img className="logo-alpha-bank" src='./img/alpha-bank.jpg' alt="logo"/>
-                            <img className="logo-iba" src='./img/IBA.jpg' alt="logo"/>
+                            <img className="logo-bau-arenda" src={bauarenda} alt="logo"/>
+                            <img className="logo-titan" src={titan} alt="logo"/>
+                            <img className="logo-favorit" src={favorit} alt="logo"/>
+                            <img className="logo-alpha-bank" src={alphabank} alt="logo"/>
+                            <img className="logo-iba" src={IBA} alt="logo"/>
                         </div>
                     </div>
                 </div>

@@ -1,15 +1,20 @@
 import React, { useState } from 'react'
 import './staff-slider.scss'
+import staff1 from '../../img/staff1.jpg'
+import staff2 from '../../img/staff2.jpg'
+import staff3 from '../../img/staff3.jpg'
+import staff4 from '../../img/staff4.jpg'
+import staff5 from '../../img/staff5.jpg'
 
 let index = 0
 
 export const StaffSlider = () => {
     const staffItems = [
-        { src: './img/staff1.jpg' },
-        { src: './img/staff2.jpg' },
-        { src: './img/staff3.jpg' },
-        { src: './img/staff4.jpg' },
-        { src: './img/staff5.jpg' },
+        { src: staff1 },
+        { src: staff2 },
+        { src: staff3 },
+        { src: staff4 },
+        { src: staff5 },
     ]
     
     const [ defaultSlide, setDefaultSlide ] = useState(staffItems[0])

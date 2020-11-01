@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import "./header-menu.scss"
 import { Link } from "react-router-dom"
+import logo from './logo.png'
 
 export const HeaderMenu = ({ toHeaderMenu, toBusinessSupport, toMainActivity, toServicesPrice, toOurAdvantages, toFooterContacts }) => {
     const menuItems = [
@@ -24,7 +25,7 @@ export const HeaderMenu = ({ toHeaderMenu, toBusinessSupport, toMainActivity, to
             <div className="container" >
                 <div className="header-menu">
                     <Link to="/">
-                        <img className="logo" src="./img/logo.png" alt="logo"/>
+                        <img className="logo" src={logo} alt="logo"/>
                     </Link>
                     <div className="nav-search">
                         <nav className="nav">

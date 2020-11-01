@@ -1,6 +1,5 @@
 import React from 'react'
 import './customise-contacts.scss'
-import './arrow.svg'
 
 export const CustomizeContacts = () => {
     return (

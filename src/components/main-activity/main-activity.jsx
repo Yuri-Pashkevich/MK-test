@@ -1,19 +1,28 @@
 import React from 'react'
 import './main-activity.scss'
 import { Link } from 'react-router-dom'
+import hand from '../../svg/hand.svg'
+import scheme from '../../svg/scheme.svg'
+import sails from '../../svg/sails.svg'
+import headphones from '../../svg/headphones.svg'
+import box from '../../svg/box.svg'
+import folder from '../../svg/folder.svg'
+import stamp from '../../svg/stamp.svg'
+import cup from '../../svg/cup.svg'
+import building from '../../svg/building.svg'
 
 export const MainActivity = ({ toMainActivity }) => {
 
     const mainActivityItems = [
-        { src: './svg/hand.svg', title: 'Взыскание долгов', id: 0 },
-        { src: './svg/scheme.svg', title: 'Реорганизация бизнеса', id: 1 },
-        { src: './svg/sails.svg', title: 'Продажа бизнеса', id: 2 },
-        { src: './svg/headphones.svg', title: 'Юридические консультации', id: 3 },
-        { src: './svg/box.svg', title: 'Ликвидация организаций', id: 4 },
-        { src: './svg/folder.svg', title: 'Разработка договоров', id: 5 },
-        { src: './svg/stamp.svg', title: 'Регистрация бизнеса', id: 6 },
-        { src: './svg/cup.svg', title: 'Юридический аутсорсинг', id: 7 },
-        { src: './svg/building.svg', title: 'Аттестация в строительстве', id: 8 },
+        { src: hand, title: 'Взыскание долгов', id: 0 },
+        { src: scheme, title: 'Реорганизация бизнеса', id: 1 },
+        { src: sails, title: 'Продажа бизнеса', id: 2 },
+        { src: headphones, title: 'Юридические консультации', id: 3 },
+        { src: box, title: 'Ликвидация организаций', id: 4 },
+        { src: folder, title: 'Разработка договоров', id: 5 },
+        { src: stamp, title: 'Регистрация бизнеса', id: 6 },
+        { src: cup, title: 'Юридический аутсорсинг', id: 7 },
+        { src: building, title: 'Аттестация в строительстве', id: 8 },
     ]
     const mainActivityList = mainActivityItems.map(({ src, title, id }) => (
         <li className="main-activity-item" key={id}>

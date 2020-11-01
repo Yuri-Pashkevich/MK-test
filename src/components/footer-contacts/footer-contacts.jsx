@@ -1,6 +1,6 @@
 import React from 'react'
 import './footer-contacts.scss'
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom' 
 
 export const FooterContacts = ({ scrollToRef }) => {
     return (

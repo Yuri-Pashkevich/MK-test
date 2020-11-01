@@ -1,14 +1,19 @@
 import React, { useState } from 'react'
 import './main-slider.scss'
 import { Link } from 'react-router-dom'
+import collection from '../../img/collection.jpg'
+import outsorsing from '../../img/outsorsing.jpg'
+import consultation from '../../img/consultation.jpg'
+import liquidation from '../../img/liquidation.jpg'
+import registration from '../../img/registration.jpg'
 
 export const MainSlider = ({ toMainActivity }) => {
     const sliderItems = [
-        { title: 'Взыскание дебиторской задолженности', text: 'Индивидуальный подход и нацеленность на достижение результата', url: './img/collection.jpg' },
-        { title: 'Юридический аутсорсинг', text: 'Гарантия своевременности и качества услуг', url: './img/outsorsing.jpg' },
-        { title: 'Юридическая консультация', text: 'Детальные разъяснения вопросов по ведению бизнеса от профессионалов', url: './img/consultation.jpg' },
-        { title: 'Ликвидация предприятия', text: 'Эффективное решение сложных задач', url: './img/liquidation.jpg' },
-        { title: 'Регистрация ООО', text: 'Гарантируем минимальные сроки регистрации под ключ ', url: './img/registration.jpg' },
+        { title: 'Взыскание дебиторской задолженности', text: 'Индивидуальный подход и нацеленность на достижение результата', url: collection },
+        { title: 'Юридический аутсорсинг', text: 'Гарантия своевременности и качества услуг', url: outsorsing },
+        { title: 'Юридическая консультация', text: 'Детальные разъяснения вопросов по ведению бизнеса от профессионалов', url: consultation },
+        { title: 'Ликвидация предприятия', text: 'Эффективное решение сложных задач', url: liquidation },
+        { title: 'Регистрация ООО', text: 'Гарантируем минимальные сроки регистрации под ключ ', url: registration },
     ]
     const [ fade, setFade ] = useState(false)
     const [ defaultSlide, setDefaultSlide ] = useState({
