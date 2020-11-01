@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/MK-test/static/css/main.bc9d6d61.chunk.css",
-    "main.js": "/MK-test/static/js/main.4b5e4b77.chunk.js",
-    "main.js.map": "/MK-test/static/js/main.4b5e4b77.chunk.js.map",
+    "main.js": "/MK-test/static/js/main.660f9038.chunk.js",
+    "main.js.map": "/MK-test/static/js/main.660f9038.chunk.js.map",
     "runtime-main.js": "/MK-test/static/js/runtime-main.a68049f6.js",
     "runtime-main.js.map": "/MK-test/static/js/runtime-main.a68049f6.js.map",
-    "static/js/2.c0d5e9fa.chunk.js": "/MK-test/static/js/2.c0d5e9fa.chunk.js",
-    "static/js/2.c0d5e9fa.chunk.js.map": "/MK-test/static/js/2.c0d5e9fa.chunk.js.map",
+    "static/js/2.03df4c27.chunk.js": "/MK-test/static/js/2.03df4c27.chunk.js",
+    "static/js/2.03df4c27.chunk.js.map": "/MK-test/static/js/2.03df4c27.chunk.js.map",
     "index.html": "/MK-test/index.html",
     "static/css/main.bc9d6d61.chunk.css.map": "/MK-test/static/css/main.bc9d6d61.chunk.css.map",
-    "static/js/2.c0d5e9fa.chunk.js.LICENSE.txt": "/MK-test/static/js/2.c0d5e9fa.chunk.js.LICENSE.txt",
+    "static/js/2.03df4c27.chunk.js.LICENSE.txt": "/MK-test/static/js/2.03df4c27.chunk.js.LICENSE.txt",
     "static/media/scroll-to-top.scss": "/MK-test/static/media/SourceSansPro-Regular.b0606ef5.ttf",
     "static/media/IBA.da81c273.jpg": "/MK-test/static/media/IBA.da81c273.jpg",
     "static/media/alpha-bank.f0ee4813.jpg": "/MK-test/static/media/alpha-bank.f0ee4813.jpg",
@@ -51,8 +51,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.a68049f6.js",
-    "static/js/2.c0d5e9fa.chunk.js",
+    "static/js/2.03df4c27.chunk.js",
     "static/css/main.bc9d6d61.chunk.css",
-    "static/js/main.4b5e4b77.chunk.js"
+    "static/js/main.660f9038.chunk.js"
   ]
 }
